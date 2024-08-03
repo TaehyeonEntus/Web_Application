@@ -1,1 +1,8 @@
 services:
+  mysql:
+    image: 'mysql:8.0.27'
+    environment:
+      - 'MYSQL_DATABASE=jpashop'
+      - 'MYSQL_ROOT_PASSWORD=root'
+    ports:
+      - '3306:3306'
